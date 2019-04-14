@@ -3,6 +3,7 @@
   <a href="{% url 'topics' %}">Topics</a> -
   {% if user.is_authenticated %}
     Hello, {{ user.username }}.
+      <a href="{% url 'logout·' %}">log out</a>
   {% else %}
       <a href="{% url 'login' %}">log in</a>
   {% endif %}
