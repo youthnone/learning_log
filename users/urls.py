@@ -12,4 +12,6 @@ urlpatterns = [
     # url(r'^logout/$',views.logout_view,name='logout'),
     #这两种方法都可行
     path('logout/',views.logout_view,name='logout'),
+    # 注册页面
+    path('register',views.register,name='register')
 ]
