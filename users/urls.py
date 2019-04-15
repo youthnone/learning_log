@@ -6,8 +6,8 @@ from . import views
 
 urlpatterns = [
     # 登录页面
-    path(r'^login/$',LoginView.as_view(template_name='users/login.html'),name='login'),
-    path(r'^logout/$',views.logout_view,name = 'logout' ),
-    path(r'^register/$',views.register,name='register')
+    path('login/',LoginView.as_view(template_name='users/login.html'),name='login'),
+    path('logout/',views.logout_view,name = 'logout' ),
+    path('register/',views.register,name='register')
 
 ]
